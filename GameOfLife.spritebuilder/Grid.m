@@ -82,7 +82,6 @@ static const int GRID_COLUMNS = 10;
         popChange = -1;
     }
     _totalAlive += popChange;
-    CCLOG(_totalAlive);
 }
 
 - (Creature *)creatureForTouchPosition:(CGPoint)touchPosition
