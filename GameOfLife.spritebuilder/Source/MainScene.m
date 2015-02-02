@@ -13,7 +13,7 @@
     Grid *_grid;
     CCTimer *_timer;
     CCLabelTTF *_generationLabel;
-    //CCLabelTTF *_populationLabel;
+    CCLabelTTF *_populationLabel;
 }
 
 - (id)init
@@ -43,7 +43,7 @@
 {
     [_grid evolveStep];
     _generationLabel.string = [NSString stringWithFormat:@"%d", _grid.generation];
-    __populationLabel.string = [NSString stringWithFormat:@"%d", _grid.totalAlive];
+    _populationLabel.string = [NSString stringWithFormat:@"%d", _grid.totalAlive];
 }
 
 @end
